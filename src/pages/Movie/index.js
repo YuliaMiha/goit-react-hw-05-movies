@@ -1,6 +1,1 @@
-export const Movie = () =>{
-    return(
-        <>
-        </>
-    )
-}
+export {Movie as default} from "./Movie"

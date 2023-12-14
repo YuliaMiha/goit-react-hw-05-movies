@@ -14,22 +14,23 @@ export const getMovieTrending = async () => {
     return data;
 };
 
-export const getMovieSearch = async params => {
-   const {data} = await movieService.get('/serch/movie', { params });
-   return data;
+
+export const getMovieSearch  = async params => {
+  const { data } = await movieService.get('/search/movie', { params });
+  return data;
 };
 
-export const getMovieDetails = async id => {
-  const {data} = await movieService.get('/movie/$(id)' );
+export const getMovieDetails  = async id => {
+  const { data } = await movieService.get(`/movie/${id}` );
   return data;
 };
 
 export const getMovieCredits  = async id => {
-    const { data } = await movieService.get(`/movie/${id}/credits`);
-    return data;
-  };
-  
-  export const getMovieReviews  = async id => {
-    const { data } = await movieService.get(`/movie/${id}/reviews`);
-    return data;
-  };
+  const { data } = await movieService.get(`/movie/${id}/credits`);
+  return data;
+};
+
+export const getMovieReviews  = async id => {
+  const { data } = await movieService.get(`/movie/${id}/reviews`);
+  return data;
+};
