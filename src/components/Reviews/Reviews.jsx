@@ -21,7 +21,6 @@ export const Reviews = () => {
     movieReviews();
   }, [movieId]);
 
-
   return (
     <>
       <ul>
