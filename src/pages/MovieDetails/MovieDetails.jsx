@@ -39,8 +39,9 @@ export const MovieDetails = () => {
      
       <button className="btn btn-outline-primary m-3">Cast</button>
       </Link>
-      <Link state={{ from: location.state?.from || location }} to="review">
-        <button className="btn btn-outline-primary ">Reviews</button>
+      <Link state={{ from: location.state?.from || location }} to="reviews">
+
+        <button className="btn btn-outline-primary">Reviews</button>
       </Link>
       <Suspense fallback={<p>Зробіть свій вибір</p>}>
         <Outlet />

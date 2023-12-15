@@ -3,8 +3,8 @@ import {Link, NavLink} from 'react-router-dom'
 export const Header =()=>{
 
     return(
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
+<nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
     <Link className="navbar-brand" to="/">
         FILMOTEKA
     </Link>

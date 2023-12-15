@@ -3,7 +3,7 @@ import axios from 'axios';
 export const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
 const movieService = axios.create({
-    baseURL: 'https://api.themoviedb.org/3/',
+    baseURL: 'https://api.themoviedb.org/3',
     params: {
         api_key: 'd4c1160dfb24302d7b96bc867bcaabe6'
     }

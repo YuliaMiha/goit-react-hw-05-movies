@@ -1,7 +1,7 @@
 import { Notify } from 'notiflix';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getMovieReviews } from 'services/movieApi';
+import { getMovieReviews } from '../../services/movieApi';
 
 export const Reviews = () => {
   const [reviews, setReviews] = useState([]);
