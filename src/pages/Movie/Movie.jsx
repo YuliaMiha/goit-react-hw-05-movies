@@ -34,9 +34,12 @@ export const Movie = () => {
     fetchMovie();
   }, [query]);
 
+  
   const handleSearch = e => {
-    setMovie([]);
-    setParams({ q: e });
+    if (e.trim() !== '') {
+      setMovie([]);
+      setParams({ q: e.trim() });
+    }
   };
 
   return (
