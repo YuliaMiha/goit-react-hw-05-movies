@@ -14,10 +14,12 @@ export const SearchBar = ({onSubmit}) => {
             setForm('');
           };
     
-        const resetForm = e => {
+          const resetForm = e => {
             e.preventDefault();
-            onSubmit(form);
-            reset();
+            if (form.trim() !== '') {
+              onSubmit(form.trim()); 
+              reset();
+            }
           };
     
 
